@@ -1,3 +1,9 @@
+body{
+    margin:10% 10% 10% 10%;
+    text-align: center;
+    color:greenyellow;
+}
+
 h1{
     color:blue;
 }
@@ -6,9 +12,24 @@ h2{
     color:#1423ad;
 }
 
+h3{
+    color:#0f2f76;
+}
 p{
     color:#36423f;
 }
 
-
+img{
+    border: 2px solid black; 
+    border-radius: 5%;
 }
+a{
+    align-items: end;
+}
+
+.final-nav{
+    margin: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
