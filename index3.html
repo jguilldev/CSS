@@ -22,7 +22,51 @@
         <h3><b>ESPECIFICIDAD</b></h3>
         <p>La especificidad, cada una de las propiedades, tiene un peso, a mayor peso esta propiedad tiene <br>
         prioridad sobre otras</p>
-        <img class="especificidad" src="/images/Especificidad.png" alt="">
-    
-</body>
+        <h4>1.IMPORTANT (!importantt)</h4>
+        <p>En el CSS antes de finalizar la propiedad agregas el important</p>
+        <img src="/images/important.png" alt="">
+        <h4>2. ESTILOS EN LINEA</h4>
+        <p>En el HTML, agregas como atributo Styles, y en el agregas la propiedad CSS</p>
+        <img src="images/estilo-en-linea.png" alt="">
+        <h4>3. IDENTIFICADORES ID</h4>
+        <p>En el HTML le das un ID, que luego utilizaras como selector en el CSS</p>
+        <img src="images/id.png" alt="">
+        <h4>4. CLASES PSEUDOCLASES Y ATRIBUTOS</h4>
+        <h5>clases</h5>
+            <img src="images/claseHTML.png" alt="">
+        <h5>pseudo-clases</h5>
+        <img src="images/pseudo-html.png" alt=""><br><br>
+        <img src="images/pseudo-css.png" alt="">
+        <h5>Atributos</h5>
+        <img src="images/atributo-html.png" alt=""><br><br>
+        <img src="images/atributo-css.png" alt="">
+        <h4>4 ELEMENTOS</h4>
+        <p>Se refiere directamente al elemento h1 h2 div img etc</p>
+        <img src="/images/elemento.png" alt="">
+        <h4>5 PSEUDOELEMENTOS</h4>
+        <img src="images/pseudo-html.png" alt=""><br><br>
+        <img src="images/pseudo-css.png" alt=""><br><br>
+        <img class="especificidad" src="/images/Especificidad.png" alt=""> 
+        <p>IMAGEN ESPECIFICIDAD ↑</p>
+
+        <p>Si usamos el siguiente codigo:</p>
+
+    <img src="/images/jerarquia-html.png" alt="">
+
+        <p>Se supondria que CSS Hojas de estilo en cascada ( del inglés C ascading Style Sheets ) <br>
+        deberia predominar lo ultimo que se escribe de alli su nombre, sin embargo en el ejemplo predomina <br>
+        clases, por encima de elementos como se ve en la imagen de especificidad</p>
+
+        <img src="/images/jerarquia-css.png" alt="">
+
+        <p>Por lo tanto, a pesar de que la modificacion dentro del CSS, se hace en ultima instancia con el elemento</p>
+        <p>La accion que predomina es la declarada en la clase por eso en el browser se vera asi:</p>
+
+        <img  src="images/jerarquia-browser.png" alt="">
+
+        <div class="final-nav">
+            <a href="/index.html">PAG 1</a>
+            <a href="/index4.html">PAG 2</a> 
+            </div>
+        
 </html>

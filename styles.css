@@ -47,11 +47,12 @@ img{
     border: 2px solid white; 
     border-radius: 5%;
 }
+
 a{
     color: white;
     align-items: end;
     font-size: 25px;
-    
+    margin-bottom: 2%;
 }
 
 .final-nav{
@@ -67,9 +68,14 @@ a{
 }
 
 .pseudo:hover{
-    color: purple;
+    color: purple ;
 }
 
 .especificidad{
     max-width: 80vw;
 }
+
+
+
+
+
