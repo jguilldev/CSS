@@ -10,6 +10,40 @@
     <h1>GENERALIDADES DE CSS III</h1>
     <H2>Metodologia BEM</H2>
     <p>Se basa en conocer el nombre de la clase, para saber que elemento del HTML estamos seleccionando</p>
-    <br>
+    
+    <p>En primera instancia trata de organizar las clases la contenedora, y las clases de  los elementos <br>
+    hijos, la clase principal lleva su nombre el elemento hijo se conformara del elemento padre dos guiones bajos(__) <br> 
+    y el identificador de la clase, si es necesario un tercer elemento, entonces a este le sumaremos dos guiones medios (--)</p>
+    
+    <p>1. Bloque: .bloque <br> </p>
+       <p>2. Elemento: .bloque__elemento </p> 
+        <p>3. Modificador: .bloque--modificador o .bloque__elemento--modificador</p>
+    
+        <p>Es decir en HTML organizado el codigo se veria asi:</p>
+        <img src="images/BEM-HTML.png" alt="">
+
+        <p>Y en CSS organizado el codigo se veria asi:</p>
+        <img src="images/BEM-CSS.png" alt="">
+
+        <p>Si tenemos un elemento padre con varios elementos hijos podemos, especificar en cada uno</p>
+        <p>en el HTML:</p>
+        <img tyle="max-width: 90%;" src="images/BEM__hijos--HTML.png" alt="">
+        <p>en el CSS:</p>
+        <img src="images/BEM__hijos--CSS.png" alt="">
+        <p>Si se requiriera un elemento mas es decir, que dentro del tercero existiera un 4 elemento, <br>
+        entonces deberiamos volver a usar en ese elemento los dos guiones bajos (__), asi:</p>
+        <img style="max-width: 90%;" src="images/BEM__HTML--4contenedor.png" alt="">
+
+
+        <div class="final-nav">
+            <a href="index3.html">PAG2</a>
+            <a href="/index5.html">PAG 4</a> 
+            </div>
+          
+
+
+
+        
+          
 </body>
 </html>
