@@ -114,7 +114,55 @@ p span{
     color:red;
 }
 
+strong{
+    color: #4CBD49;
+}
+
+.texto{
+    color:blueviolet;
+    font-size: 200%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 8;
+    font-weight: 400;
+     
+}
   
+.font-stretch-ultra-condensed {
+    font-family: "Arial", sans-serif;
+    font-stretch: ultra-condensed;
+  }
+  .font-stretch-extra-condensed {
+    font-family: "Arial", sans-serif;
+    font-stretch: extra-condensed;
+  }
+  .font-stretch-condensed {
+    font-family: "Arial", sans-serif;
+    font-stretch: condensed;
+  }
+  .font-stretch-semi-condensed {
+    font-family: "Arial", sans-serif;
+    font-stretch: semi-condensed;
+  }
+  .font-stretch-normal {
+    font-family: "Arial", sans-serif;
+    font-stretch: normal;
+  }
+  .font-stretch-semi-expanded {
+    font-family: "Arial", sans-serif;
+    font-stretch: semi-expanded;
+  }
+  .font-stretch-expanded {
+    font-family: "Arial", sans-serif;
+    font-stretch: expanded;
+  }
+  .font-stretch-extra-expanded {
+    font-family: "Arial", sans-serif;
+    font-stretch: extra-expanded;
+  }
+  .font-stretch-ultra-expanded {
+    font-family: "Arial", sans-serif;
+    font-stretch: ultra-expanded;
+  }
 
 
 
