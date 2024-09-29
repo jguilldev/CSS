@@ -4,46 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>CSS pag 3</title>
+    <title>CSS pag4</title>
 </head>
 <body>
-    <h1>GENERALIDADES DE CSS III</h1>
-    <H2>Metodologia BEM</H2>
-    <p>Se basa en conocer el nombre de la clase, para saber que elemento del HTML estamos seleccionando</p>
+    <h1>GENERALIDADES DE CSS IV</h1>
+    <H2>UNIDADES DE MEDIDAS (PX, REM, BEM, ETC)</H2>
+    <H3>1. UNIDADES DE MEDIDA FIJAS</H3>
     
-    <p>En primera instancia trata de organizar las clases la contenedora, y las clases de  los elementos <br>
-    hijos, la clase principal lleva su nombre el elemento hijo se conformara del elemento padre dos guiones bajos(__) <br> 
-    y el identificador de la clase, si es necesario un tercer elemento, entonces a este le sumaremos dos guiones medios (--)</p>
+    <p>Las unidades de medidas fijas son:</p>
+
+    <h4>px:</h4>
+    <p>Píxeles. Una unidad fija que representa un punto en la pantalla. La longitud de un píxel depende de la resolución de la pantalla.</p>
+
+    <h4>cm:</h4>
+    <p>Centímetros. Una unidad fija de longitud que representa la longitud física en la pantalla. 1cm es igual a 37.8px.</p>
+
+    <h4>mm:</h4>
+    <p>Milímetros. Una unidad fija de longitud que representa la longitud física en la pantalla. 1mm es igual a 0.1cm o 3.78px.</p>
+
+    <h4>in:</h4>
+    <p>Pulgadas. Una unidad fija de longitud que representa la longitud física en la pantalla. 1in es igual a 2.54cm o 96px.</p>
+
+    <h4>pt:</h4>
+    <p>Puntos. Una unidad fija de longitud que se utiliza principalmente en la impresión. 1pt es igual a 1/72 de pulgada o 1.33px.</p>
+
+    <h4>pc:</h4>
+    <p>Picas. Una unidad fija de longitud que se utiliza principalmente en la impresión. 1pc es igual a 12 puntos o 16px.</p>
+
+    <h4>Pixeles</h4>
+    <p>Los pixeles definen la cantidad de pixeles que representan la pantalla, si se varia la medida, del font size (CSS) <br>
+    el tamaño variara en el HTML</p>
+    <p>En el HTML, traeremos un h4 </p>
+
+    <img src="/images/pixeles-html.png" alt="">
+
+    <P>por ejemplo, podemos darle a este en el CSS con la propiedad font-size tamaño a la letra de de 20 o 30 px</P>
+    <img src="images/pixeles-css30.png" alt=""><br><br>
+    <img src="images/pixeles-HTML20.png" alt="">
+    <p>Y si cambiamos a 50px la letra se hara mas grande</p>
+    <img src="images/pixeles-html50.png" alt="">
+    <p>de la misma forma funciona con cm(centimetros), mm(milimetros), pt(puntos), etc, estas medidas no son relativas a nada <br>
+    es decir que estos tamaños se basan en unidades de medida especifica, sin embargo, existen otras unidades de medida que <br> 
+    si son relativas </p>
+
+
     
-    <p>1. Bloque: .bloque <br> </p>
-       <p>2. Elemento: .bloque__elemento </p> 
-        <p>3. Modificador: .bloque--modificador o .bloque__elemento--modificador</p>
-    
-        <p>Es decir en HTML organizado el codigo se veria asi:</p>
-        <img src="images/BEM-HTML.png" alt="">
+    <!-- <H3>2. UNIDADES DE MEDIDA RELATIVAS</H3> -->
+        <p>Las unidades de medida relativas se dan uando un componente, varia su tamaño respecto a su contenedor, <br>
+        en el siguiente ejemplo el contenedor seria el naranja y los items serian los azules</p>
 
-        <p>Y en CSS organizado el codigo se veria asi:</p>
-        <img src="images/BEM-CSS.png" alt="">
+<h4>em: </h4> <p>Relativa al tamaño de la fuente del elemento actual. Por ejemplo, si el tamaño de la fuente de un elemento es de 16px, 2em sería 32px.</p>
 
-        <p>Si tenemos un elemento padre con varios elementos hijos podemos, especificar en cada uno</p>
-        <p>en el HTML:</p>
-        <img tyle="max-width: 90%;" src="images/BEM__hijos--HTML.png" alt="">
-        <p>en el CSS:</p>
-        <img src="images/BEM__hijos--CSS.png" alt="">
-        <p>Si se requiriera un elemento mas es decir, que dentro del tercero existiera un 4 elemento, <br>
-        entonces deberiamos volver a usar en ese elemento los dos guiones bajos (__), asi:</p>
-        <img style="max-width: 90%;" src="images/BEM__HTML--4contenedor.png" alt="">
+<h4>rem:</h4> <p> Relativa al tamaño de la fuente del elemento raíz (generalmente <html>). Si el tamaño de la fuente del elemento raíz es 16px, entonces <br>
+     1rem siempre será 16px, independientemente del contexto del elemento.</p>
+
+<h4> %: </h4> <p> Relativa al tamaño del elemento padre. Por ejemplo, width: 50% hace que el ancho del elemento sea el 50% del ancho del elemento padre.</p>
+
+<h4>vw (</h4> <p> viewport width): Relativa al ancho del viewport (ventana del navegador). 1vw es igual al 1% del ancho del viewport.</p>
+
+<h4>vh (</h4> <p> viewport height): Relativa a la altura del viewport. 1vh es igual al 1% de la altura del viewport.</p>
+
+<h4>vmin:</h4> <p> Relativa al menor valor entre el ancho y la altura del viewport. 1vmin es igual al 1% del menor valor entre el ancho y la altura del viewport.</p>
+
+<h4>vmax:</h4> <p> Relativa al mayor valor entre el ancho y la altura del viewport. 1vmax es igual al 1% del mayor valor entre el ancho y la altura del viewport.</p>
+
+<h4> ex: </h4> <p>Relativa a la altura de la letra 'x' (generalmente la altura de la minúscula 'x') en la fuente del elemento actual.</p>
+
+<h4>ch: </h4><p>Relativa al ancho del carácter '0' en la fuente del elemento actual.</p>
+
+            <p>En el HTML y CSS siguiente, por ejemplo las medidas serian fijas</p>
+            <img src="/images/relativas-html.png" alt="">
+            <p>Y en CSS</p>
+            <img src="images/relativas-css.png" alt="">
+            <br><br>
+            <p>Quedaria:</p>
+
+        <div class="prueba"> conteiner
+            <div class="item">item1</div>
+            <div class="item">item2</div>
+            <div class="item">item3</div>
+        </div>
+
+        <p>Pero podriamos hacerlas relativas obteniendo:</p>
+        <img src="/images/relativas-html.png" alt=""><br><br>
+        <img src="/images/relativas-css.png" alt=""><br><br>
+        <p>Tendriamos como resultado el mismo HTML</p>
+
+        <div class="prueba"> conteiner
+            <div class="item-2">item1</div>
+            <div class="item-2">item2</div>
+            <div class="item-2">item3</div>
+        </div>
+
+        <p>Sin embargo al cambiar el tamño de la pantalla, se conservara la medida relativa a su contenedor <br>
+        (si no se reproduce automaticamente dale play <span>&#9654;</span> )</p>
+        <video style="max-width: 80%;" controls autoplay loop src="/videos/relativas-video.mp4"></video>
 
 
-        <div class="final-nav">
-            <a href="index3.html">PAG2</a>
-            <a href="/index5.html">PAG 4</a> 
-            </div>
-          
-
-
-
-        
-          
+    <div class="final-nav">
+        <a href="index3.html">PAG3</a>
+        <a href="/index5.html">PAG 6</a> 
+    </div>
 </body>
 </html>

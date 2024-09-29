@@ -4,69 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>CSS pag 2</title>
+    <title>CSS pag 3</title>
 </head>
 <body>
-    <h1>GENERALIDADES DE CSS II</h1>
-    <h3><b>SELECTOR CON PSEUDOCLASES</b></h3>
-    <p>Se puede indicar DESDE  el CSS la pseudoclase</p>
-        <p>Se puede indicar como selector el elemento HTML, con su pseudoclase</p>
-        <p>En el html se le da la clase</p>
-        <img src="/images/pseudo-html.png" alt="">
-        <p>En el CSS se le da el valor al que se convierte en este caso cambio de color al <br>
-        al pasar el mouse por encima</p>
-        <img src="/images/pseudo-css.png" alt="">
-        <h3 class="pseudo">PSEUDOCLASE</h3>
-        <p>Pasa el mause para ver la pseudoclase funcionando ↑</p>
+    <h1>GENERALIDADES DE CSS III</h1>
+    <H2>Metodologia BEM</H2>
+    <p>Se basa en conocer el nombre de la clase, para saber que elemento del HTML estamos seleccionando</p>
+    
+    <p>En primera instancia trata de organizar las clases la contenedora, y las clases de  los elementos <br>
+    hijos, la clase principal lleva su nombre el elemento hijo se conformara del elemento padre dos guiones bajos(__) <br> 
+    y el identificador de la clase, si es necesario un tercer elemento, entonces a este le sumaremos dos guiones medios (--)</p>
+    
+    <p>1. Bloque: .bloque <br> </p>
+       <p>2. Elemento: .bloque__elemento </p> 
+        <p>3. Modificador: .bloque--modificador o .bloque__elemento--modificador</p>
+    
+        <p>Es decir en HTML organizado el codigo se veria asi:</p>
+        <img src="images/BEM-HTML.png" alt="">
 
-        <h3><b>ESPECIFICIDAD</b></h3>
-        <p>La especificidad, cada una de las propiedades, tiene un peso, a mayor peso esta propiedad tiene <br>
-        prioridad sobre otras</p>
-        <h4>1.IMPORTANT (!importantt)</h4>
-        <p>En el CSS antes de finalizar la propiedad agregas el important</p>
-        <img src="/images/important.png" alt="">
-        <h4>2. ESTILOS EN LINEA</h4>
-        <p>En el HTML, agregas como atributo Styles, y en el agregas la propiedad CSS</p>
-        <img src="images/estilo-en-linea.png" alt="">
-        <h4>3. IDENTIFICADORES ID</h4>
-        <p>En el HTML le das un ID, que luego utilizaras como selector en el CSS</p>
-        <img src="images/id.png" alt="">
-        <h4>4. CLASES PSEUDOCLASES Y ATRIBUTOS</h4>
-        <h5>clases</h5>
-            <img src="images/claseHTML.png" alt="">
-        <h5>pseudo-clases</h5>
-        <img src="images/pseudo-html.png" alt=""><br><br>
-        <img src="images/pseudo-css.png" alt="">
-        <h5>Atributos</h5>
-        <img src="images/atributo-html.png" alt=""><br><br>
-        <img src="images/atributo-css.png" alt="">
-        <h4>4 ELEMENTOS</h4>
-        <p>Se refiere directamente al elemento h1 h2 div img etc</p>
-        <img src="/images/elemento.png" alt="">
-        <h4>5 PSEUDOELEMENTOS</h4>
-        <img src="images/pseudo-html.png" alt=""><br><br>
-        <img src="images/pseudo-css.png" alt=""><br><br>
-        <img class="especificidad" src="/images/Especificidad.png" alt=""> 
-        <p>IMAGEN ESPECIFICIDAD ↑</p>
+        <p>Y en CSS organizado el codigo se veria asi:</p>
+        <img src="images/BEM-CSS.png" alt="">
 
-        <p>Si usamos el siguiente codigo:</p>
+        <p>Si tenemos un elemento padre con varios elementos hijos podemos, especificar en cada uno</p>
+        <p>en el HTML:</p>
+        <img tyle="max-width: 90%;" src="images/BEM__hijos--HTML.png" alt="">
+        <p>en el CSS:</p>
+        <img src="images/BEM__hijos--CSS.png" alt="">
+        <p>Si se requiriera un elemento mas es decir, que dentro del tercero existiera un 4 elemento, <br>
+        entonces deberiamos volver a usar en ese elemento los dos guiones bajos (__), asi:</p>
+        <img style="max-width: 90%;" src="images/BEM__HTML--4contenedor.png" alt="">
 
-    <img src="/images/jerarquia-html.png" alt="">
-
-        <p>Se supondria que CSS Hojas de estilo en cascada ( del inglés C ascading Style Sheets ) <br>
-        deberia predominar lo ultimo que se escribe de alli su nombre, sin embargo en el ejemplo predomina <br>
-        clases, por encima de elementos como se ve en la imagen de especificidad</p>
-
-        <img src="/images/jerarquia-css.png" alt="">
-
-        <p>Por lo tanto, a pesar de que la modificacion dentro del CSS, se hace en ultima instancia con el elemento</p>
-        <p>La accion que predomina es la declarada en la clase por eso en el browser se vera asi:</p>
-
-        <img  src="images/jerarquia-browser.png" alt="">
 
         <div class="final-nav">
-            <a href="/index.html">PAG 1</a>
-            <a href="/index4.html">PAG 3</a> 
+            <a href="index2.html">PAG2</a>
+            <a href="/index4.html">PAG 5</a> 
             </div>
+          
+
+
+
         
+          
+</body>
 </html>
