@@ -63,7 +63,7 @@ a:hover{
 .final-nav{
     margin: 5% 0% 3% 0% ;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around !important;
     
 }
 
@@ -164,5 +164,8 @@ strong{
     font-stretch: ultra-expanded;
   }
 
-
+.p-ejemplo{
+    font-family: "Jockey One", sans-serif;
+    /* esta clase solo se uso para dar el ejemplo de uso de fonts con google en la pagina 5 index5 */
+}
 
