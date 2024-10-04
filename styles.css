@@ -57,7 +57,8 @@ a{
 }
 
 a:hover{
-    font-size: 28px;  
+    font-size: 28px; 
+    color: #4CBD49; 
 }
 
 .final-nav{
@@ -169,3 +170,8 @@ strong{
     /* esta clase solo se uso para dar el ejemplo de uso de fonts con google en la pagina 5 index5 */
 }
 
+div{
+    /* Propiedad shorthand */
+    margin: 10px 20px 30px 40px; /* top, right, bottom, left */
+    }
+    
