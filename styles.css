@@ -3,7 +3,7 @@ body{
     text-align: center;
     color:greenyellow;
 
-    background-image: url(/images/fondo.jpeg);
+    background-image: url(./images/fondo.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
