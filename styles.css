@@ -175,3 +175,14 @@ div{
     margin: 10px 20px 30px 40px; /* top, right, bottom, left */
     }
     
+.margin1{
+    display: inline-block;
+    background-color:purple;
+    margin: 10% ;
+}
+.margin2{
+    display: inline-block;
+    background-color: green ;
+    margin: 10% ;
+}
+
