@@ -175,14 +175,12 @@ div{
     margin: 10px 20px 30px 40px; /* top, right, bottom, left */
     }
     
-.margin1{
+.border{
     display: inline-block;
+    padding: 6px;
     background-color:purple;
-    margin: 10% ;
+    border-radius: 3em ;
+    border: 3px solid #3498db;
 }
-.margin2{
-    display: inline-block;
-    background-color: green ;
-    margin: 10% ;
-}
+
 
