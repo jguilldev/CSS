@@ -175,12 +175,13 @@ div{
     margin: 10px 20px 30px 40px; /* top, right, bottom, left */
     }
     
-.border{
+.translate{
     display: inline-block;
     padding: 6px;
-    background-color:purple;
+    background-color:black;
     border-radius: 3em ;
-    border: 3px solid #3498db;
+    border: 3px solid #04066b;
+    transform: translate(50px, 100px); 
 }
 
 
