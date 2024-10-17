@@ -175,13 +175,14 @@ div{
     margin: 10px 20px 30px 40px; /* top, right, bottom, left */
     }
     
-.translate{
-    display: inline-block;
-    padding: 6px;
-    background-color:black;
-    border-radius: 3em ;
-    border: 3px solid #04066b;
-    transform: translate(50px, 100px); 
+.contenedor{
+    perspective: 800px;
 }
-
+.elemento:hover{
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+    transform: rotateX(30deg) rotateY(45deg); /* Rota en ambos ejes para efecto 3D */
+    transition: transform 0.8s; /* Suaviza la animación */
+}
 
