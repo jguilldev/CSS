@@ -56,6 +56,15 @@ a{
     text-decoration: none;
 }
 
+li a{
+    color:#F39C12;
+    text-shadow: 2px 2px black;
+}
+
+indice-color{
+    color: #4CBD49;
+}
+
 a:hover{
     font-size: 28px; 
     color: #4CBD49; 
