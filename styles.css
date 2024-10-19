@@ -2,7 +2,6 @@ body{
     margin:10% 10% 10% 10%;
     text-align: center;
     color:greenyellow;
-
     background-image: url(./images/fondo.jpeg);
     background-size: cover;
     background-position: center;
@@ -52,6 +51,7 @@ a{
     color: white;
     align-items: end;
     font-size: 25px;
+    margin-top: 2%;
     margin-bottom: 2%;
     text-decoration: none;
 }
@@ -179,19 +179,5 @@ strong{
     /* esta clase solo se uso para dar el ejemplo de uso de fonts con google en la pagina 5 index5 */
 }
 
-div{
-    /* Propiedad shorthand */
-    margin: 10px 20px 30px 40px; /* top, right, bottom, left */
-    }
-    
-.contenedor{
-    perspective: 800px;
-}
-.elemento:hover{
-    width: 100px;
-    height: 100px;
-    background-color: skyblue;
-    transform: rotateX(30deg) rotateY(45deg); /* Rota en ambos ejes para efecto 3D */
-    transition: transform 0.8s; /* Suaviza la animación */
-}
+
 
