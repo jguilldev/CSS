@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CSS pag 14</title>
+</head>
+<body>
+
+    <div class="final-nav">
+        <a href="index13.html">PAG 13</a>
+        <a href="index.html">INICIO</a>
+        <a href="index15.html">PAG 15</a> 
+    </div>  
+    
+    <h1>Z-INDEX</h1>
+    <P>Es una propiedad que es capaz de ajustarse a los elementos en cuanto a su profundidad, es decir podemos ajustar <br>
+    cual elemento se ubica por encima del otro, o detras del otro</P>
+    <i style="color: green; text-shadow: 0.7px 0.7px greenyellow; font-size: x-large;">Los elementos deben tener un position diferente a static <br>
+    es decir (relative, absolute, fixed, o sticky)</i></p>
+
+    <p>Mientras mas altos los valores del z-index el objeto se mostrara mas por enzima</p>
+    <p>Mientras mas bajos los valores del z-index el objeto se mostrara mas por debajo de los demas</p>
+    <p>Si dos objetos tienen el mismo z-index, entonces seguiran el orden natural del documento, es decir <br>
+    el ultimo elemento en el HTML estara encima de los anteriores</p>
+
+    <img src="./images/zIndexHTML.png" alt=""><br><br>
+    <img src="./images/zIndexCSS1.png" alt=""><br><br>
+    <img src="./images/zIndexCSS2.png" alt=""><br><br>
+    <br>
+    <p>sigue el flujo del HTML siendo el ultimo en el HTML el que se <br>
+    ubica mas al frente</p>
+    <img src="./images/zIndexBrows.png" alt=""><br><br>
+
+    <p>la explicacion de esta caja anterior es la siguiente: </p>
+    <p>La caja azul tiene el index menor (1), por ello se encuentra mas al fondo</p>
+    <p>La caja roja se ubica mas al frente, ya que tiene el z-index mas alto (3)</p>
+    <p>La caja tres (verde) y la caja cuatro (purpura), tienen el mismo z-index, sin embargo se ve mas al frente la purpura <br>
+    ya que como aparece anterio
+
+    <i style="color: green; text-shadow: 0.7px 0.7px greenyellow; font-size: x-large;">La unica forma de poner al hijo debajo del <br>
+    elemento padre es con el uso de z-index negativos como: " -1 "</i></p>
+
+
+
+
+
+
+    <div class="final-nav">
+        <a href="index13.html">PAG 13</a>
+        <a href="index.html">INICIO</a>
+        <a href="index15.html">PAG 15</a> 
+    </div>  
+    
+</body>
+</html>
