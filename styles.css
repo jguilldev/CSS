@@ -181,5 +181,39 @@ strong{
 }
 
 
+/* aqui inicia el codigo css, para los ejemplos de flexbox con lista desplegable en el HTML */
 
+.container-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
 
+.container {
+    background-color: blue;
+    display: flex;
+    width: 240px;
+    height: 240px;
+    align-self: center;
+  }
+
+  .items1, .items2, .items3, .items4 {
+    width: 20px;
+    height: 20px;
+  }
+
+  .items1 {
+    background-color: red;
+  }
+  .items2 {
+    background-color: green;
+  }
+  .items3 {
+    background-color: white;
+  }
+  .items4 {
+    background-color: orangered;
+  }
+
+/* aqui termina el codigo css, para los ejemplos de flexbox con lista desplegable en el HTML */

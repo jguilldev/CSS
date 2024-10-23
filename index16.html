@@ -15,6 +15,71 @@
     </div>  
 
     <h1>DISPLAY FLEX O FLEXBOX</h1>
+    <p>Aunque con lo aprendido anteriormente en cuanto a display, el tipo de display flexbox, permite hacer ajustes de <br>
+    manera mas dinamica y flexible. Es posible ajustar el tamaño de los elementos de forma mas facil y sin importar <br>
+    el tamaño del elemento contenedor</p>
+    <p>En display flex es importante conocer dos conceptos principales:</p>
+
+    <h2>Eje principal (main axis): </h2> 
+    <p>Se refiere a el eje en el que se ubican los elementos dentro de su contenedor o elemento padre <i style="color: yellowgreen;">Contenedor Flex (flex container)</i> <br>
+    puede ser horizontal o vertical</p>
+    
+    <h2>Eje cruzado (cross axis): </h2> 
+    <p>Es el eje perpendicular al eje principal.</p>
+
+    <img src="./images/axisFlex.png" alt=""><br><br>
+
+    <h2>Contenedor Flex (flex container): </h2> 
+    <p> Es el elemento al que se le aplica display: flex, es decir el elemento contenedor</p>
+
+    <h2>Elemento Flex (flex item): </h2> 
+    <p>Elemento Flex (flex item): Son los hijos directos del contenedor flex, o los que estan dentro del flex container</p>
+
+    <img src="./images/elemntosFlex.png" alt=""><br><br>
+
+    <p>Ahora te presento un HTML, CSS y imagen en el browser de e un container y sus elementos:</p>
+
+    <img src="./images/flexHTML.png" alt=""><br><br>
+    <img src="./images/flexCSS.png" alt=""><br><br>
+    <img src="./images/flexBrowser.png" alt=""><br><br>
+
+    <h2>PROPIEDADES DE FLEXBOX I</h2>
+
+    <h3>flex-direction</h3>
+    <p>Permite cambiar la direccion en que los elementos se alinean y tiene varios valores</p>
+    <p> <i style="color: green;">row (por defecto):</i> Es la posicion por defecto, los elementos hijos se alinean de izquierda a derecha<br>
+        <i style="color: green;">row-reverse:</i>  Los elementos hijos se alinean en fila pero de izquierda a derecha<br>
+        <i style="color: green;">column:</i>  Los elementos hijos se alinean en columnas de arriba a abajo<br>
+        <i style="color: green;">column-reverse:</i>  Los elementos hijos se alinean en columna, pero ahora de abajo hacia arriba</p>
+
+        <p>Puedes seleccionar en el menu desplegable cada uno de los anteriores valores de la propiedad, para <br>
+        ver como se comportan</p>
+
+    <div>
+        <label for="flexDirection">Selecciona la dirección de los elementos:</label>
+        <select id="flexDirection">
+          <option value="row">row (Por defecto)</option>
+          <option value="row-reverse">row-reverse</option>
+          <option value="column">Column</option>
+          <option value="column-reverse">Columna-reverse</option>
+        </select>
+      </div>
+    
+      <div class="container-wrapper">
+        <div class="container">
+          <div class="items1">1</div>
+          <div class="items2">2</div>
+          <div class="items3">3</div>
+          <div class="items4">4</div>
+        </div>
+      </div>
+
+    <h4>row</h4>
+    <p>Se refiere a la fila y como vimos en el ejemplo anterior se acomodan de izquiera a derecha o inverso con reverse </p>
+    <h4>column</h4>
+    <p>Se refiere a las columnas y funciona de arriba hacia abajo por defecto o inverso si usamos row-reverse</p>
+
+   
 
     <div class="final-nav">
         <a href="index15.html">PAG 15</a>
@@ -22,5 +87,6 @@
         <a href="index17.html">PAG 17</a> 
     </div>  
     
+    <script src="./script.js"></script>
 </body>
 </html>
