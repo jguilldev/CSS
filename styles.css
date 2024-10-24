@@ -217,3 +217,104 @@ strong{
   }
 
 /* aqui termina el codigo css, para los ejemplos de flexbox con lista desplegable en el HTML */
+
+/* inicio de clases para ejemplo de justify content  */
+.justify-container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  margin-left: auto; /*para centrar con respecto al contenedor */
+  margin-right: auto; /*para centrar con respecto al contenedor */
+}
+
+.justify-container {
+  background-color: #3498db;
+  display: flex;
+  width: 320px;
+  height: 160px;
+  align-items: center;
+}
+
+.justify-items1 {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  background-color: #f1c40f;
+  color: black;
+}
+.justify-items2 {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  background-color: #091b7e;
+  color: black;
+}
+.justify-items3 {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  background-color: #e23509;
+  color: black;
+}
+/* final de clases para ejemplo de justify content  */
+
+/* inicio clases específicas para el ejemplo de align-items */
+
+/* Estilo del contenedor que rodea los ítems */
+
+#flexContainerAlignExample {
+  display: flex;
+  width: 80%; /* Ocupa el 80% del ancho disponible */
+  height: 80%;
+  max-width: 600px; /* Limita el ancho máximo del contenedor */
+  background-color: #f3f3f3;
+  border: 1px solid #333;
+  padding: 10px;
+  justify-content: space-around; /* Espacio igual entre los elementos */
+}
+
+.align-container-wrapper {
+  display: flex;
+  justify-content: center; /* Centra el contenedor horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  height: 300px; /* Altura para ajustar bien los ítems */
+  margin-top: 20px; /* Separación de la parte superior */
+}
+
+.align-items1 {
+  width: 50px;
+  height: auto;
+  margin: 5px;
+  background-color: #f39c12;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.align-items2 {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  background-color: #3498db;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.align-items3 {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  background-color: #e74c3c;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* fin clases específicas para el ejemplo de align-items */

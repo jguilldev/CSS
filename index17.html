@@ -16,48 +16,85 @@
     
     <h2>PROPIEDADES DE FLEXBOX II</h2>
 
-        <h3>justify-content</h3>
+    <h3>justify-content</h3>
     <p>Esta propiedad controla la forma en que se organizan los elementos frontalmente</p>
 
-    <!-- <div>
-        <label for="flexDirection">Selecciona la dirección de los elementos:</label>
-        <select id="flexDirection">
-          <option value="row">Fila (Por defecto)</option>
-          <option value="row-reverse">Fila inversa</option>
-          <option value="column">Columna</option>
-          <option value="column-reverse">Columna inversa</option>
-        </select>
+    <p>puede presentar varias propiedades, como:</p>
+
+    <p>
+      <i style="color: green;">flex-start:</i>  Alinea los elementos al principio del contenedor (valor por defecto). <br><br>
+      <i style="color: green;">flex-end:</i>  Alinea los elementos al final del contenedor. <br><br>
+      <i style="color: green;">center:</i>  Alinea los elementos al centro del contenedor.<br><br>
+      <i style="color: green;">space-between:</i>  Distribuye los elementos con espacio igual entre ellos. <br><br>
+      <i style="color: green;">space-around:</i>  Distribuye los elementos con espacio igual alrededor de cada uno. <br><br>
+      <i style="color: green;">space-evenly:</i>  Distribuye los elementos con espacio igual entre ellos y en los extremos.
+    </p>
+    <p>Selecciona el valor de la propiedad y veras su comportamiento</p>
+
+    <div>
+      <label for="justifyContentExample">Selecciona la alineación de los elementos:</label>
+      <select id="justifyContentExample">
+        <option value="flex-start">flex-start</option>
+        <option value="flex-end">flex-end</option>
+        <option value="center">center</option>
+        <option value="space-between">space-between</option>
+        <option value="space-around">space-around</option>
+        <option value="space-around">space-evenly</option>
+      </select>
+    </div>
+  
+    <div class="justify-container-wrapper">
+      <div class="justify-container" id="justifyExampleContainer">
+        <div class="justify-items1">1</div>
+        <div class="justify-items2">2</div>
+        <div class="justify-items3">3</div>
       </div>
-     -->
-      <div>
-        <label for="justifyContent">Selecciona la alineación de los elementos:</label>
-        <select id="justifyContent">
-          <option value="flex-start">Inicio (Por defecto)</option>
-          <option value="flex-end">Final</option>
-          <option value="center">Centro</option>
-          <option value="space-between">Espacio entre</option>
-          <option value="space-around">Espacio alrededor</option>
-        </select>
+    </div>
+  
+    <h3>Align Items</h3>
+    <p>Esta propiedad controla la alineacion vertical de los elementos eje perpendicular al principal</p>
+
+    <p>puede presentar varias propiedades, como:</p>
+
+    <p>
+      <i style="color: green;">stretch:</i> Estira los elementos al total del largo del contenedor (posicion por defecto) <br><br>
+      <i style="color: green;">flex-start: </i>  Alinea los elementos al inicio del eje transversal(arriba)<br><br>
+      <i style="color: green;">flex-end:</i>  Alinea los elementos al final del eje transversal (abajo).<br><br>
+      <i style="color: green;">center:</i>  Alinea los elementos en el centro del eje vertical<br><br>
+      <i style="color: green;">baseline:</i>  Alinea los elementos según la línea base del texto de cada elemento. Es <br>
+      es decir el alto del texto que contengan internamente
+    </p>
+
+    <div>
+      <label for="alignItemsExample">Selecciona la alineación vertical de los elementos:</label>
+      <select id="alignItemsExample">
+        <option value="flex-start">Inicio (flex-start)</option>
+        <option value="flex-end">Final (flex-end)</option>
+        <option value="center">Centro (center)</option>
+        <option value="stretch">Estirar (stretch)</option>
+        <option value="baseline">Línea base (baseline)</option>
+      </select>
+    </div>
+    <p>strech solo funciona si los items no tienen un height definido, como lo esta el elemento 1</p>
+    <p>los elementos 2 y 3, tiene definido el height</p>
+
+    <!-- Contenedor para el ejemplo de align-items, con un ID único -->
+    <div class="align-container-wrapper">
+      <div id="flexContainerAlignExample">
+        <div class="align-items1">1</div>
+        <div class="align-items2">2</div>
+        <div class="align-items3">3</div>
       </div>
-    
-      <div class="container-wrapper">
-        <div class="container">
-          <div class="items1">1</div>
-          <div class="items2">2</div>
-          <div class="items3">3</div>
-          <div class="items4">4</div>
-        </div>
-      </div>
-    
+    </div>
 
 
 
 
 
-    <h3>align-items</h3>
+   
 
     <h3>align-content</h3>
-
+ 
     <h3>flex-grow</h3>
     <h3>flex-shrink</h3>
     <h3>flex-basis</h3>
@@ -74,6 +111,6 @@
         <a href="index18.html">PAG 18</a> 
     </div>  
 
-    <script src="./script.js"></script>
+    <script src="./script2.js"></script>
 </body>
 </html>
