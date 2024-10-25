@@ -11,7 +11,7 @@ Puedes ver el proyecto en vivo en GitHub Pages:
 [Ver Proyecto](https://jguilldev.github.io/CSS/)
 
 ## Instalación ⚙️
-Este proyecto no requiere instalación especial. Simplemente usa el link este te mostrara el proyecto corriendo.
+Este proyecto no requiere instalación especial. Simplemente usa el link este te mostrara el proyecto corriendo. Lo creé con el fin de agilizar mis propias consultas en caso de dudas, y quién sabe, tal vez sea útil para algunos futuros programadores que, como yo, estén aprendiendo CSS. Si necesitas más ayuda o ajustes, ¡hazmelo saber!
 
 ## Contenido del Proyecto 📂
 - **Selector, Propiedad y Valor**: Explicación de los selectores en CSS y cómo aplicar propiedades y valores a los elementos.
