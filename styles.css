@@ -318,3 +318,100 @@ strong{
 }
 
 /* fin clases específicas para el ejemplo de align-items */
+
+/* inicio clases align content  */
+
+.align-content-items1, 
+.align-content-items2, 
+.align-content-items3, 
+.align-content-items4, 
+.align-content-items5, 
+.align-content-items6 {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.align-content-items1 { background-color: #e74c3c; }
+.align-content-items2 { background-color: #3498db; }
+.align-content-items3 { background-color: #f39c12; }
+.align-content-items4 { background-color: #2ecc71; }
+.align-content-items5 { background-color: #9b59b6; }
+.align-content-items6 { background-color: #1abc9c; }
+
+/* Estilo del contenedor que rodea los ítems */
+.align-content-wrapper {
+  display: flex;
+  justify-content: center; /* Centra el contenedor horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  height: 300px; /* Altura del contenedor */
+  margin-top: 20px;
+}
+
+/* Estilo del contenedor flexible para los ítems */
+#flexContainerAlignContentExample {
+  display: flex;
+  flex-wrap: wrap; /* Para que los ítems se agrupen en múltiples líneas */
+  width: 80%;
+  max-width: 220px;
+  height: 200px; /* Altura fija para ver el efecto de align-content */
+  background-color: #ecf0f1;
+  border: 1px solid #333;
+  padding: 10px;
+  justify-content: space-around; /* Espacio entre los ítems */
+  align-content: flex-start; /* Valor inicial de align-content */
+}
+
+/* fin clases align content  */
+
+
+
+/* inicio clases grow  */
+
+/* Clases específicas para el ejemplo de flex-grow */
+.flex-grow-item1, 
+.flex-grow-item2, 
+.flex-grow-item3 {
+  height: 50px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.flex-grow-item1 { background-color: #e74c3c; }
+.flex-grow-item2 { background-color: #3498db; }
+.flex-grow-item3 { background-color: #2ecc71; }
+
+/* Estilo del contenedor que rodea los ítems */
+.flex-grow-wrapper {
+  display: flex;
+  justify-content: center; /* Centra el contenedor horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  height: 400px; /* Altura del contenedor */
+  margin-top: 20px;
+  
+}
+
+/* Estilo del contenedor flexible para los ítems */
+#flexContainerFlexGrowExample {
+  display: flex;
+  width: 80%;
+  height: 300px;
+  max-width: 800px;
+  background-color: #ecf0f1;
+  border: 1px solid #333;
+  padding: 10px;
+  justify-content: space-around; /* Espacio entre los ítems */
+  flex-direction: column;
+}
+
+
+/* fin clases grow  */

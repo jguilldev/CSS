@@ -94,9 +94,91 @@
    
 
     <h3>align-content</h3>
+    <p>Controla como se comportan los elementos dentro del contenedor flex en el eje transversal <br>
+    es mas comunmente usado cuando hay varias lineas de elementos en el contenedor flex, es decir <br>
+    <i style="color: green;" >Cuando hay mas de una linea de contenido</i></p>
+    <p>Si el contenedor ya tiene suficiente altura para acomodar los elementos (es decir, las líneas de <br>
+     elementos llenan el contenedor), el estiramiento no se notará porque ya están ocupando todo el espacio.</p>
+     <p>Sin embargo, si el contenedor es más alto que el espacio necesario para las líneas de elementos, <br>
+    entonces el stretch estirará las líneas de elementos para llenar todo el espacio vertical disponible.</p>
+
+    <p>Los valores para esta propiedad pueden ser:</p>
+
+    <p>
+      <i style="color: green;">flex-start:</i> Se alinean en la parte superior <br><br>
+      <i style="color: green;">flex-end: </i>  se alinean en la parte inferior<br><br>
+      <i style="color: green;">center:</i>  Alinea los elementos al centro del contenedor<br><br>
+      <i style="color: green;">space-between: </i>  se distribuyen dejando un espacio igual entre ellos(items) (afecta el margin)<br><br>
+      <i style="color: green;">space-around:</i>  Alinea los elementos dejando un espacio igual alrededor <br><br>
+      <i style="color: green;">space-evenly:</i>  Alinea los elementos ejando un espacio igual alrededor y entre ellos (items) <br><br>
+      <i style="color: green;">stretch: </i>Las líneas se estirarán para ocupar todo el espacio vertical del contenedor. (afecta el tamaño del contenedor)
+    </p> <br><br>
+
+
+    <label for="alignContentExample">Selecciona la alineación del contenido (align-content):</label>
+      <select id="alignContentExample">
+        <option value="flex-start">Inicio (flex-start)</option>
+        <option value="flex-end">Final (flex-end)</option>
+        <option value="center">Centro (center)</option>
+        <option value="space-between">Espacio entre (space-between)</option>
+        <option value="space-around">Espacio alrededor (space-around)</option>
+        <option value="space-evenly">Espacio uniformemente (space-evenly)</option>
+        <option value="stretch">Estirar (stretch) </option>
+      </select>
+    </div>
+
+    <!-- Contenedor para el ejemplo de align-content -->
+    <div class="align-content-wrapper">
+      <div id="flexContainerAlignContentExample">
+        <div class="align-content-items1">Item 1</div>
+        <div class="align-content-items2">Item 2</div>
+        <div class="align-content-items3">Item 3</div>
+        <div class="align-content-items4">Item 4</div>
+        <div class="align-content-items5">Item 5</div>
+        <div class="align-content-items6">Item 6</div>
+      </div>
+    </div>
  
     <h3>flex-grow</h3>
-    <h3>flex-shrink</h3>
+    
+    <p>Define como los elementos pueden crecer (grow) para ocupar el espaco disponible, se define como cada elemento <br>
+    crece en comparacion con los demas</p>
+    <p>Si un elemento con valor 2 en la propiedad grow: crecera el doble de uno que tenga la propiedad grow:1</p>
+
+      <p>cuando se usa en un contenedor flex que tiene una orientación de fila (flex-direction: row, que es el valor <br>
+      por defecto). Esto significa que, cuando los elementos se colocan en una fila, flex-grow controla cómo esos <br>
+      elementos crecen para ocupar el espacio horizontal disponible.</p>
+
+      <p>Sin embargo, si el contenedor tiene una orientación de columna (flex-direction: column), flex-grow afectará <br>
+      la altura de los elementos. Es decir, cuando los elementos se organizan verticalmente, flex-grow controla cómo <br>
+      crecen para ocupar el espacio vertical disponible.</p>
+
+    <p>Los valores para esta propiedad pueden ser:</p><br><br>
+
+    <div>
+      <label for="flexGrowExample">Selecciona cómo crecerán los ítems:</label>
+      <select id="flexGrowExample">
+        <option value="1, 1, 1">Crecimiento igual (1, 1, 1)</option>
+        <option value="1, 2, 1">Crecimiento medio (1, 2, 1)</option>
+        <option value="2, 1, 3">Crecimiento desigual (2, 1, 3)</option>
+        <option value="0, 1, 2">Crecimiento cero, normal y alto (0, 1, 2)</option>
+      </select>
+    </div>
+
+    <!-- Contenedor para el ejemplo de flex-grow -->
+    <div class="flex-grow-wrapper">
+      <div id="flexContainerFlexGrowExample">
+        <div class="flex-grow-item1">Item 1</div>
+        <div class="flex-grow-item2">Item 2</div>
+        <div class="flex-grow-item3">Item 3</div>
+      </div>
+    </div>
+
+    <p><i style="color: red; font-size: xx-large;"> falta poner los casos de grow explicados en p, poner <br>
+    los dos casos de flex direction grow, y añadir imagenes codigo HTML y CSS a todos los casos faltantes</i></p>
+
+
+    <h3 style="margin: auto;">flex-shrink</h3>
     <h3>flex-basis</h3>
 
     <h3>Propiedad abreviada o short hand ( flex-grow, flex-shrink, flex-basis)</h3>
