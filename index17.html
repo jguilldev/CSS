@@ -153,7 +153,7 @@
       la altura de los elementos. Es decir, cuando los elementos se organizan verticalmente, flex-grow controla cómo <br>
       crecen para ocupar el espacio vertical disponible.</p>
 
-    <p>Los valores para esta propiedad pueden ser:</p><br><br>
+    <p>Los valores para esta propiedad pueden ser usando  flex direction column:</p><br><br>
 
     <div>
       <label for="flexGrowExample">Selecciona cómo crecerán los ítems:</label>
@@ -174,11 +174,72 @@
       </div>
     </div>
 
-    <p><i style="color: red; font-size: xx-large;"> falta poner los casos de grow explicados en p, poner <br>
-    los dos casos de flex direction grow, y añadir imagenes codigo HTML y CSS a todos los casos faltantes</i></p>
+    <p>O pueden ser con flex direction row</p>
 
+    <div>
+      <label for="flexGrowRowExample">Selecciona cómo crecerán los ítems:</label>
+      <select id="flexGrowRowExample">
+        <option value="1, 1, 1">Crecimiento igual (1, 1, 1)</option>
+        <option value="1, 2, 1">Crecimiento medio (1, 2, 1)</option>
+        <option value="2, 1, 3">Crecimiento desigual (2, 1, 3)</option>
+        <option value="0, 1, 2">Crecimiento cero, normal y alto (0, 1, 2)</option>
+      </select>
+    </div>
+  
+    <div class="flex-grow-row-wrapper">
+      <div class="flex-grow-row-container" id="flexGrowRowContainer">
+        <div class="flex-grow-row-item1">Item 1</div>
+        <div class="flex-grow-row-item2">Item 2</div>
+        <div class="flex-grow-row-item3">Item 3</div>
+      </div>
+    </div>
 
     <h3 style="margin: auto;">flex-shrink</h3>
+    <p>Esta propiedad es similar a flex grow, solo que en vez de controlar el crecimiento en proporcion, esta propiedad <br>
+    controla el encogimiento o disminucion proporcional, en filas:</p>
+
+    <div>
+      <label for="flexShrinkExample">Selecciona cómo se reducirán los ítems:</label>
+      <select id="flexShrinkExample">
+        <option value="1, 1, 1">Reducción igual (1, 1, 1)</option>
+        <option value="1, 2, 1">Reducción medio (1, 2, 1)</option>
+        <option value="2, 1, 3">Reducción desigual (2, 1, 3)</option>
+        <option value="0, 1, 2">Sin reducción, normal y alta (0, 1, 2)</option>
+      </select>
+    </div>
+  
+    
+  
+    <div class="flex-shrink-wrapper">
+      <div class="flex-shrink-container" id="flexShrinkContainer">
+        <div class="flex-shrink-item1">Item 1</div>
+        <div class="flex-shrink-item2">Item 2</div>
+        <div class="flex-shrink-item3">Item 3</div>
+      </div>
+    </div>
+
+
+    <p>o tambien el manejo de flex shrink en filas:</p>
+
+    <div>
+      <label for="flexShrinkRowExample">Selecciona cómo se reducirán los ítems:</label>
+      <select id="flexShrinkRowExample">
+        <option value="1,1,1">Reducción igual (1, 1, 1)</option>
+        <option value="1,2,1">Reducción medio (1, 2, 1)</option>
+        <option value="2,1,3">Reducción desigual (2, 1, 3)</option>
+        <option value="0,1,2">Sin reducción, normal y alta (0, 1, 2)</option>
+      </select>
+    </div>
+  
+    <div class="flex-shrink-row-wrapper">
+      <div class="flex-shrink-row-container" id="flexShrinkRowContainer">
+        <div class="flex-shrink-row-item1">Item 1</div>
+        <div class="flex-shrink-row-item2">Item 2</div>
+        <div class="flex-shrink-row-item3">Item 3</div>
+      </div>
+    </div>
+
+    <p><i style="color: red; font-size: xx-large;"> falta poner añadir imagenes codigo HTML y CSS a todos los casos faltantes</i></p>
     <h3>flex-basis</h3>
 
     <h3>Propiedad abreviada o short hand ( flex-grow, flex-shrink, flex-basis)</h3>

@@ -415,3 +415,129 @@ strong{
 
 
 /* fin clases grow  */
+
+
+
+/* inicio clases grow con row (filas)  */
+
+ /* Clases específicas para el ejemplo de flex-grow-direction */
+ .flex-grow-row-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-grow-row-container {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 300px;
+  max-width: 800px;
+  background-color: #ecf0f1;
+  border: 1px solid #333;
+  padding: 10px;
+}
+
+.flex-grow-row-item1, .flex-grow-row-item2, .flex-grow-row-item3 {
+  height: 50px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.flex-grow-row-item1 { background-color: #e74c3c; }
+.flex-grow-row-item2 { background-color: #3498db; }
+.flex-grow-row-item3 { background-color: #2ecc71; }
+
+/* fin clases grow con row (filas)  */
+
+
+/* Inicio clases flex shrink columnas  */
+
+/* Clases específicas para el ejemplo de flex-shrink */
+.flex-shrink-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-shrink-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 400px;
+  max-width: 800px;
+  background-color: #ecf0f1;
+  border: 1px solid #333;
+  padding: 10px;
+}
+
+.flex-shrink-item1, .flex-shrink-item2, .flex-shrink-item3 {
+  flex-basis: 200px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.flex-shrink-item1 { background-color: #e74c3c; }
+.flex-shrink-item2 { background-color: #3498db; }
+.flex-shrink-item3 { background-color: #2ecc71; }
+
+/* Fin clases flex shrink columnas */
+
+/*  Inicio clases flex shrink filas */
+
+  /* Clases específicas para el ejemplo de flex-shrink con filas */
+  .flex-shrink-row-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .flex-shrink-row-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 300px;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border: 1px solid #333;
+    padding: 15px;
+  }
+
+  .flex-shrink-row-item1, .flex-shrink-row-item2, .flex-shrink-row-item3 {
+    flex-basis: 150px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+  }
+
+  .flex-shrink-row-item1 { background-color: #9b59b6; }
+  .flex-shrink-row-item2 { background-color: #1abc9c; }
+  .flex-shrink-row-item3 { background-color: #e67e22; }
+
+/* fin clases flex shrink filas */
