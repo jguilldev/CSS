@@ -110,21 +110,82 @@ if (selectFlexGrow && flexGrowItem1 && flexGrowItem2 && flexGrowItem3) {
 
     // final script flex shrink en filas
 
-    // inicio de script flex shrink en filas
-    const selectFlexShrinkRow = document.getElementById('flexShrinkRowExample');
-    const flexShrinkRowItem1 = document.querySelector('.flex-shrink-row-item1');
-    const flexShrinkRowItem2 = document.querySelector('.flex-shrink-row-item2');
-    const flexShrinkRowItem3 = document.querySelector('.flex-shrink-row-item3');
+// script2.js - Control de flex-shrink en filas
 
-    function applyFlexShrinkRow(values) {
-      flexShrinkRowItem1.style.flexShrink = parseInt(values[0]);
-      flexShrinkRowItem2.style.flexShrink = parseInt(values[1]);
-      flexShrinkRowItem3.style.flexShrink = parseInt(values[2]);
-    }
+// Selección del select para flex-shrink en filas
+const selectFlexShrinkRow = document.getElementById('flexShrinkRowExample');
+const flexShrinkRowItem1 = document.querySelector('.flex-shrink-row-item1');
+const flexShrinkRowItem2 = document.querySelector('.flex-shrink-row-item2');
+const flexShrinkRowItem3 = document.querySelector('.flex-shrink-row-item3');
 
-    selectFlexShrinkRow.addEventListener('change', (event) => {
-      const values = event.target.value.split(',');
-      applyFlexShrinkRow(values);
-    });
+// Función para aplicar flex-shrink
+function applyFlexShrinkRow(values) {
+  flexShrinkRowItem1.style.flexShrink = parseInt(values[0]);
+  flexShrinkRowItem2.style.flexShrink = parseInt(values[1]);
+  flexShrinkRowItem3.style.flexShrink = parseInt(values[2]);
+}
+
+// Escucha los cambios en el select y aplica flex-shrink
+selectFlexShrinkRow.addEventListener('change', (event) => {
+  const values = event.target.value.split(',').map(value => parseInt(value.trim()));
+  applyFlexShrinkRow(values);
+});
+
     
     // fin  de script flex shrink en filas
+
+
+    // inicio script de flex basis
+
+  // script2.js - Control de flex-basis con ID específico
+
+// Selección del select para flex-basis
+const selectFlexBasis = document.getElementById('flexBasisExample');
+// Elementos específicos para aplicar flex-basis
+const flexBasisItem1 = document.querySelector('.flex-basis-item1');
+const flexBasisItem2 = document.querySelector('.flex-basis-item2');
+const flexBasisItem3 = document.querySelector('.flex-basis-item3');
+
+// Función para aplicar flex-basis
+function applyFlexBasis(values) {
+  flexBasisItem1.style.flexBasis = values[0];
+  flexBasisItem2.style.flexBasis = values[1];
+  flexBasisItem3.style.flexBasis = values[2];
+}
+
+// Escucha cambios en el select y aplica flex-basis
+selectFlexBasis.addEventListener('change', (event) => {
+  const values = event.target.value.split(',').map(value => value.trim());
+  applyFlexBasis(values);
+});
+
+
+    // inicio script de flex basis
+
+    /* inicio script short hand grow shrink basis */
+
+    // script2.js - Control de la propiedad abreviada flex con ID específico
+
+// Selección del select para la propiedad abreviada flex
+const selectFlexShorthand = document.getElementById('flexShorthandExample');
+// Elementos específicos para aplicar la propiedad abreviada flex
+const flexShorthandItem1 = document.querySelector('.flex-shorthand-item1');
+const flexShorthandItem2 = document.querySelector('.flex-shorthand-item2');
+const flexShorthandItem3 = document.querySelector('.flex-shorthand-item3');
+
+// Función para aplicar la propiedad abreviada flex
+function applyFlexShorthand(values) {
+  flexShorthandItem1.style.flex = values;
+  flexShorthandItem2.style.flex = values;
+  flexShorthandItem3.style.flex = values;
+}
+
+// Escucha cambios en el select y aplica la propiedad abreviada flex
+selectFlexShorthand.addEventListener('change', (event) => {
+  const values = event.target.value;
+  applyFlexShorthand(values);
+});
+
+
+    /* fin script short hand grow shrink basis */
+    
