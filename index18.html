@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="final-nav">
+        <a href="index17.html">PAG 17</a>
+        <a href="index.html">INICIO</a>
+        <a href="index19.html">PAG 19</a> 
+    </div>  
+    
+
+    <h1>PROPIEDADES DE FLEXBOX III</h1>
+
+    <h3>flex-grow</h3>
+    
+    <p>Define como los elementos pueden crecer (grow) para ocupar el espaco disponible, se define como cada elemento <br>
+    crece en comparacion con los demas</p>
+    <p>Si un elemento con valor 2 en la propiedad grow: crecera el doble de uno que tenga la propiedad grow:1</p>
+
+      <p>cuando se usa en un contenedor flex que tiene una orientación de fila (flex-direction: row, que es el valor <br>
+      por defecto). Esto significa que, cuando los elementos se colocan en una fila, flex-grow controla cómo esos <br>
+      elementos crecen para ocupar el espacio horizontal disponible.</p>
+
+      <p>Sin embargo, si el contenedor tiene una orientación de columna (flex-direction: column), flex-grow afectará <br>
+      la altura de los elementos. Es decir, cuando los elementos se organizan verticalmente, flex-grow controla cómo <br>
+      crecen para ocupar el espacio vertical disponible.</p>
+
+      <p>El siguiente es el codigo del ejemplo en HTML, CSS y JavaScript, para flex direction column</p>
+
+      <img src="./images/flexGrowColumnHtml.png" alt=""><br><br>
+      <img src="./images/flexGrowColumnCSS.png" alt=""><br><br>
+      <img src="./images/flexGrowColumnJavaScript.png" alt=""><br><br>
+
+    <p>Los valores para esta propiedad pueden ser usando  flex direction column:</p><br><br>
+
+    <div>
+      <label for="flexGrowExample">Selecciona cómo crecerán los ítems:</label>
+      <select id="flexGrowExample">
+        <option value="1, 1, 1">Crecimiento igual (1, 1, 1)</option>
+        <option value="1, 2, 1">Crecimiento medio (1, 2, 1)</option>
+        <option value="2, 1, 3">Crecimiento desigual (2, 1, 3)</option>
+        <option value="0, 1, 2">Crecimiento cero, normal y alto (0, 1, 2)</option>
+      </select>
+    </div>
+
+    <!-- Contenedor para el ejemplo de flex-grow -->
+    <div class="flex-grow-wrapper">
+      <div id="flexContainerFlexGrowExample">
+        <div class="flex-grow-item1">Item 1</div>
+        <div class="flex-grow-item2">Item 2</div>
+        <div class="flex-grow-item3">Item 3</div>
+      </div>
+    </div>
+
+    <p>O pueden ser con flex direction row</p>
+    <p>El siguiente es el codigo del ejemplo en HTML, CSS y JavaScript, para flex direction row</p>
+
+    <img src="./images/flexGrowRowHtml.png" alt=""><br><br>
+    <img src="./images/flexGrowRowCSS.png" alt=""><br><br>
+    <img src="./images/flexGrowRowJavaScript.png" alt=""><br><br>
+
+    <div>
+      <label for="flexGrowRowExample">Selecciona cómo crecerán los ítems:</label>
+      <select id="flexGrowRowExample">
+        <option value="1, 1, 1">Crecimiento igual (1, 1, 1)</option>
+        <option value="1, 2, 1">Crecimiento medio (1, 2, 1)</option>
+        <option value="2, 1, 3">Crecimiento desigual (2, 1, 3)</option>
+        <option value="0, 1, 2">Crecimiento cero, normal y alto (0, 1, 2)</option>
+      </select>
+    </div>
+  
+    <div class="flex-grow-row-wrapper">
+      <div class="flex-grow-row-container" id="flexGrowRowContainer">
+        <div class="flex-grow-row-item1">Item 1</div>
+        <div class="flex-grow-row-item2">Item 2</div>
+        <div class="flex-grow-row-item3">Item 3</div>
+      </div>
+    </div>
+
+    <br><br>
+
+    <h3 style="margin: auto;">flex-shrink</h3>
+    <p>Esta propiedad es similar a flex grow, solo que en vez de controlar el crecimiento en proporcion, esta propiedad <br>
+    controla el encogimiento o disminucion proporcional, en filas:</p>
+
+    <p>El siguiente es el codigo del ejemplo en HTML, CSS y JavaScript, para flex Shrink en Columnas (column)</p>
+    <p style="color: red;">Puedes notar un comportamiento extraño en cuanto a los ejes de ubicacion ya que row se puede tornar column <br>
+    y column row, esto se debe a que En Flexbox, las propiedades de alineación dependen de la dirección del contenedor <br>
+    (flex-direction). Cuando el contenedor está en fila (row), el eje principal es horizontal, por lo que justify-content <br>
+    alinea los elementos de izquierda a derecha y align-items los alinea verticalmente. En cambio, si el contenedor <br>
+    está en columna (column), el eje principal se vuelve vertical, y entonces justify-content alinea de arriba a abajo,<br>
+     mientras que align-items alinea de izquierda a derecha. Este cambio de orientación en los ejes según <br>
+    flex-direction es lo que hace que las propiedades parezcan "intercambiar" su función. </p>
+
+    <img src="./images/flexShrinkColumnasHtml.png" alt=""><br><br>
+    <img src="./images/flexShrinkColumnasCSS.png" alt=""><br><br>
+    <img src="./images/flexShrinkColumnasJavaScript.png" alt=""><br><br>
+
+    <p>El manejo de flex shrink en columnas:</p>
+
+    <div>
+      <label for="flexShrinkExample">Selecciona cómo se reducirán los ítems:</label>
+      <select id="flexShrinkExample">
+        <option value="1, 1, 1">Reducción igual (1, 1, 1)</option>
+        <option value="1, 2, 1">Reducción medio (1, 2, 1)</option>
+        <option value="2, 1, 3">Reducción desigual (2, 1, 3)</option>
+        <option value="0, 1, 2">Sin reducción, normal y alta (0, 1, 2)</option>
+      </select>
+    </div>
+  
+    <div class="flex-shrink-wrapper">
+      <div class="flex-shrink-container" id="flexShrinkContainer">
+        <div class="flex-shrink-item1">Item 1</div>
+        <div class="flex-shrink-item2">Item 2</div>
+        <div class="flex-shrink-item3">Item 3</div>
+      </div>
+    </div>
+
+
+    <p>o tambien el manejo de flex shrink en filas:</p>
+
+    <p>El siguiente es el codigo del ejemplo en HTML, CSS y JavaScript, para flex shrink en filas</p>
+
+    <img src="./images/flexShrinkRowsHtml.png" alt=""><br><br>
+    <img src="./images/flexShrinkRowsCSS.png" alt=""><br><br>
+    <img src="./images/flexShrinkRowsJavaScript.png" alt=""><br><br>
+
+    <div>
+      <label for="flexShrinkRowExample">Selecciona cómo se reducirán los ítems:</label>
+      <select id="flexShrinkRowExample">
+        <option value="1,1,1">Reducción igual (1, 1, 1)</option>
+        <option value="1,2,1">Reducción medio (1, 2, 1)</option>
+        <option value="2,1,3">Reducción desigual (2, 1, 3)</option>
+        <option value="0,1,2">Sin reducción, normal y alta (0, 1, 2)</option>
+      </select>
+    </div>
+  
+    <div class="flex-shrink-row-wrapper">
+      <div class="flex-shrink-row-container" id="flexShrinkRowContainer">
+        <div class="flex-shrink-row-item1">Item 1</div>
+        <div class="flex-shrink-row-item2">Item 2</div>
+        <div class="flex-shrink-row-item3">Item 3</div>
+      </div>
+    </div>
+ 
+    <div class="final-nav">
+        <a href="index17.html">PAG 17</a>
+        <a href="index.html">INICIO</a>
+        <a href="index19.html">PAG 19</a> 
+    </div>  
+
+    <script src="./script2.js"></script>
+</body>
+</html>

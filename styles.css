@@ -371,7 +371,7 @@ strong{
 
 
 
-/* inicio clases grow  */
+/* inicio clases grow  column (columnas)*/
 
 /* Clases específicas para el ejemplo de flex-grow */
 .flex-grow-item1, 
@@ -414,7 +414,7 @@ strong{
 }
 
 
-/* fin clases grow  */
+/* fin clases grow column (columnas) */
 
 
 
@@ -462,7 +462,7 @@ strong{
 
 /* Inicio clases flex shrink columnas  */
 
-/* Clases específicas para el ejemplo de flex-shrink */
+/* Clases específicas para el ejemplo de flex-shrink columnas */
 .flex-shrink-wrapper {
   display: flex;
   justify-content: center;
@@ -497,7 +497,7 @@ strong{
 
 .flex-shrink-item1 { background-color: #e74c3c; }
 .flex-shrink-item2 { background-color: #3498db; }
-.flex-shrink-item3 { background-color: #2ecc71; }
+.flex-shrink-item3 { background-color: black; }
 
 /* Fin clases flex shrink columnas */
 
@@ -586,7 +586,7 @@ strong{
 
 /* fin de flex-basis */
 
-/* inicio short hand grow shrink basis */
+/* inicio flex-shortHand*/
 
 /* Clases específicas para el ejemplo de propiedad abreviada flex */
 .flex-shorthand-item1, 
@@ -629,6 +629,106 @@ strong{
   padding: 10px;
   justify-content: space-around; /* Espacio entre los ítems */
 }
+/* fin  flex-shortHand*/
+
+/* Inicio wrap */
+/* Clases específicas para el ejemplo de flex-wrap */
+.flex-wrap-item1, 
+.flex-wrap-item2, 
+.flex-wrap-item3, 
+.flex-wrap-item4, 
+.flex-wrap-item5, 
+.flex-wrap-item6 {
+  width: 120px;
+  height: 50px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.flex-wrap-item1 { background-color: #e74c3c; }
+.flex-wrap-item2 { background-color: #3498db; }
+.flex-wrap-item3 { background-color: #f39c12; }
+.flex-wrap-item4 { background-color: #2ecc71; }
+.flex-wrap-item5 { background-color: #9b59b6; }
+.flex-wrap-item6 { background-color: #1abc9c; }
+
+/* Estilo del contenedor que rodea los ítems */
+.flex-wrap-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Estilo del contenedor flexible para los ítems */
+#flexContainerFlexWrapExample {
+  display: flex;
+  flex-wrap: nowrap; /* Valor inicial de flex-wrap */
+  width: 60%; /* Limita el ancho para ver el efecto de wrap */
+  background-color: #ecf0f1;
+  border: 1px solid #333;
+  padding: 10px;
+  justify-content: flex-start;
+}
 
 
-/* fin short hand grow shrink basis */
+/* Fin wrap */
+
+/* Inicio flex-flow */
+/* Clases específicas para el ejemplo de flex-flow */
+.flex-flow-item1, 
+.flex-flow-item2, 
+.flex-flow-item3, 
+.flex-flow-item4, 
+.flex-flow-item5, 
+.flex-flow-item6 {
+  width: 100px;
+  height: 50px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.flex-flow-item1 { background-color: #e74c3c; }
+.flex-flow-item2 { background-color: #3498db; }
+.flex-flow-item3 { background-color: #f39c12; }
+.flex-flow-item4 { background-color: #2ecc71; }
+.flex-flow-item5 { background-color: #9b59b6; }
+.flex-flow-item6 { background-color: #1abc9c; }
+
+/* Estilo del contenedor que rodea los ítems */
+.flex-flow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Estilo del contenedor flexible para los ítems */
+#flexContainerFlexFlowExample {
+  display: flex;
+  flex-flow: row nowrap; /* Valor inicial de flex-flow */
+  width: 60%; /* Limita el ancho para ver el efecto de wrap en filas */
+  height: auto;
+  max-width: 600px;
+  background-color: #ecf0f1;
+  border: 1px solid #333;
+  padding: 10px;
+  justify-content: flex-start;
+}
+/* Fin flex-flow */

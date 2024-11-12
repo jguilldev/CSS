@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CSS pag 19</title>
+</head>
+<body>
+
+    <div class="final-nav">
+        <a href="index18.html">PAG 18</a>
+        <a href="index.html">INICIO</a>
+        <a href="index20.html">PAG 20</a> 
+    </div>  
+    
+    <h1>PROPIEDADES DE FLEXBOX IV</h1>
+
+    <h3>flex-basis</h3>
+
+      <p>Esta propiedad a diferencia de las otras no se aplica al contenedor padre, por el contrario esta <br>
+         propiedad es aplicada al item en cuestion, loque hace esta propiedad es aplicar el tamaño dado   <br>
+        al valor de la propiedad ya sea en pixeles, cm, etc, y esta ocupara ese tamaño, siempre y cuando el view port <br>
+      se lo suficientemente grande para ocupar ese espacio, pero si se disminuye el view port, entonces, <br>
+       guardara proporciones con respecto a los demas elementos </p>
+       <p style="color: red;">A tener en cuenta flex-basis siempre se aplica antes  de aplicar flex grow y flex shrink</p>
+
+<h3>Los valores de flex-basis</h3>
+
+<p>
+  <i style="color: green;">Valor especifico:</i> Se refiere a un valor dado en cualquier unidad de medida, pixel, rem, porcentaje, etc. <br><br>
+  <i style="color: green;">auto: </i>  Si usas auto su tamaño inicial sera el valor de widht, si no se ajusta al contenido del elemento<br><br>
+  </p>
+  <p>Aunque aquin adelante se ven los ejemplos puedes abrir el inspector (cntrol + shift + i para chrome) de la consola y variar el tamaño de la ventana <br>
+     para ver aun mejor la variacion como se aprecia en el video mas adelante</p>
+
+
+       <div>
+        <label for="flexBasisExample">Selecciona el tamaño inicial de los ítems (flex-basis):</label>
+        <select id="flexBasisExample">
+          <option value="100px, 150px, 200px">100px, 150px, 200px</option>
+          <option value="150px, 100px, 150px">150px, 100px, 150px</option>
+          <option value="200px, 100px, 50px">200px, 100px, 50px</option>
+          <option value="50px, 200px, 100px">50px, 200px, 100px</option>
+        </select>
+      </div>
+  
+      <!-- Contenedor para el ejemplo de flex-basis -->
+      <div class="flex-basis-wrapper">
+        <div id="flexContainerFlexBasisExample">
+          <div class="flex-basis-item1">Item 1</div>
+          <div class="flex-basis-item2">Item 2</div>
+          <div class="flex-basis-item3">Item 3</div>
+        </div>
+      </div>
+
+      <p>El siguiente es el codigo del ejemplo en HTML, CSS y JavaScript, para flex basis</p>
+
+      <img src="./images/flexBasisHtml.png" alt=""><br><br>
+      <img src="./images/flexBasisCSS.png" alt=""><br><br>
+      <img src="./images/flexBasisJavaScript.png" alt=""><br><br>
+
+      <p>Como vemos en el siguiente video, vemos que el contenedor 1 tiene un flex basis de 50px sin embargo al encogerse <br>
+      este, se ajusta a un tamaño mejor, sin intervenir con el tamaño de los otros y guardando proporciones</p>
+
+      <video  style="max-width: 65%; border: solid 10px;" controls autoplay loop src="./videos/flexBasis.mp4"></video>
+      <p >El anterior video se capturo con screenpreso software gratuito</p> <a style="color: aquamarine;" href="https://www.screenpresso.com/" target="_blank">Click aqui para descargar SCREENPRESSO</a>
+
+
+
+
+    <h3>Flex</h3>
+
+    <p>Es un short hand se usa para simplificar la redaccion del codigo y reune las tres anteriores propiedades, en <br>
+    una sola linea ( flex-grow, flex-shrink, flex-basis)</p>
+
+    <p>El siguiente es el codigo del ejemplo en HTML, CSS y JavaScript, para flex shorthand</p>
+
+    <img src="./images/flexHTML.png" alt=""><br><br>
+    <img src="./images/flexShortCSS.png" alt=""><br><br>
+    <img src="./images/flexJavaScript.png" alt=""><br><br>
+
+    <div>
+      <label for="flexShorthandExample">Selecciona combinación de flex-grow, flex-shrink, y flex-basis:</label>
+      <select id="flexShorthandExample">
+        <option value="1 1 100px">1 1 100px</option>
+        <option value="2 1 150px">2 1 150px</option>
+        <option value="1 0 200px">1 0 200px</option>
+        <option value="0 1 50px">0 1 50px</option>
+      </select>
+    </div>
+
+    <!-- Contenedor para el ejemplo de propiedad abreviada flex -->
+    <div class="flex-shorthand-wrapper">
+      <div id="flexContainerFlexShorthandExample">
+        <div class="flex-shorthand-item1">Item 1</div>
+        <div class="flex-shorthand-item2">Item 2</div>
+        <div class="flex-shorthand-item3">Item 3</div>
+      </div>
+    </div>
+
+    <p>Para visualizar mejor tambieen seria adecuado usar el inspector de elementos (cntrol + shift + i para chrome), <br>
+    como se aprecia en el video </p>
+
+    <video  style="max-width: 65%; border: solid 10px;" controls autoplay loop src="./videos/flexShortHand.mp4"></video>
+      <p >El anterior video se capturo con screenpreso software gratuito</p> <a style="color: aquamarine;" href="https://www.screenpresso.com/" target="_blank">Click aqui para descargar SCREENPRESSO</a>
+
+
+    <h3>flex-wrap</h3>
+
+    <p>Este propiedad controla si los elementos de un contenedor, se conservan en una o varias lineas, dependiendo de <br>
+    Si el espacio es suficiente o no, sus opciones son:</p>
+
+    <p> <i style="color: green;">flex-start:</i>No permite el ajuste de los elementos en múltiples líneas (valor por defecto). <br>
+      <i style="color: green;">flex-start:</i> Permite que los elementos se ajusten en varias líneas. <br>
+      <i style="color: green;">flex-start:</i> Permite que los elementos se ajusten en varias líneas, pero en orden inverso.<br>
+    </p>
+
+    <p>El siguiente es el codigo del ejemplo en HTML, CSS y JavaScript, para flex wrap</p>
+
+    <img src="./images/flexWrapHtml.png" alt=""><br><br>
+    <img src="./images/flexWrapCSS.png" alt=""><br><br>
+    <img src="./images/flexWrapJavaScript.png" alt=""><br><br>
+    
+    <div>
+      <label for="flexWrapExample">Selecciona el modo de ajuste de los ítems (flex-wrap):</label>
+      <select id="flexWrapExample">
+        <option value="nowrap">nowrap</option>
+        <option value="wrap">wrap</option>
+        <option value="wrap-reverse">wrap-reverse</option>
+      </select>
+    </div>
+
+    <!-- Contenedor para el ejemplo de flex-wrap -->
+    <div class="flex-wrap-wrapper">
+      <div id="flexContainerFlexWrapExample">
+        <div class="flex-wrap-item1">Item 1</div>
+        <div class="flex-wrap-item2">Item 2</div>
+        <div class="flex-wrap-item3">Item 3</div>
+        <div class="flex-wrap-item4">Item 4</div>
+        <div class="flex-wrap-item5">Item 5</div>
+        <div class="flex-wrap-item6">Item 6</div>
+      </div>
+    </div>
+
+    <div class="final-nav">
+        <a href="index18.html">PAG 18</a>
+        <a href="index.html">INICIO</a>
+        <a href="index20.html">PAG 20</a> 
+    </div>  
+    
+
+    <script src="./script2.js"></script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-    // inicio script justify items
+    // inicio script justify content
 
     const selectJustifyExample = document.getElementById('justifyContentExample');
     const justifyContainer = document.getElementById('justifyExampleContainer');
@@ -7,7 +7,7 @@
       justifyContainer.style.justifyContent = event.target.value;
     });
 
-    // fin script justify items
+    // fin script justify content
 
 
     //   inicio script aling items 
@@ -48,7 +48,7 @@
 
 
 
-    // inicio script grow
+    // inicio script grow column
 
 
 // script2.js - Control de flex-grow con ID específico
@@ -71,10 +71,11 @@ if (selectFlexGrow && flexGrowItem1 && flexGrowItem2 && flexGrowItem3) {
 }
 
 
-    // fin script grow
+    // fin script grow column
 
 
     // inicio script grow row(filas)
+
     const selectFlexGrowRow = document.getElementById('flexGrowRowExample');
     const flexGrowRowItem1 = document.querySelector('.flex-grow-row-item1');
     const flexGrowRowItem2 = document.querySelector('.flex-grow-row-item2');
@@ -90,7 +91,7 @@ if (selectFlexGrow && flexGrowItem1 && flexGrowItem2 && flexGrowItem3) {
 
 
 
-    // inicio script flex shrink en filas
+    // inicio script flex shrink en columnas
     const selectFlexShrink = document.getElementById('flexShrinkExample');
     const flexShrinkItem1 = document.querySelector('.flex-shrink-item1');
     const flexShrinkItem2 = document.querySelector('.flex-shrink-item2');
@@ -108,7 +109,7 @@ if (selectFlexGrow && flexGrowItem1 && flexGrowItem2 && flexGrowItem3) {
       applyFlexShrink(values);
     });
 
-    // final script flex shrink en filas
+    // final script flex shrink en columnas
 
 // script2.js - Control de flex-shrink en filas
 
@@ -159,12 +160,12 @@ selectFlexBasis.addEventListener('change', (event) => {
   applyFlexBasis(values);
 });
 
+// Fin script de flex basis
 
-    // inicio script de flex basis
 
-    /* inicio script short hand grow shrink basis */
+/* inicio script short hand grow shrink basis */
 
-    // script2.js - Control de la propiedad abreviada flex con ID específico
+// script2.js - Control de la propiedad abreviada flex con ID específico
 
 // Selección del select para la propiedad abreviada flex
 const selectFlexShorthand = document.getElementById('flexShorthandExample');
@@ -188,4 +189,40 @@ selectFlexShorthand.addEventListener('change', (event) => {
 
 
     /* fin script short hand grow shrink basis */
+
     
+
+/* Inicio wrap */
+
+
+
+// Selección del select para flex-wrap
+const selectFlexWrap = document.getElementById('flexWrapExample');
+// Contenedor específico para aplicar flex-wrap
+const flexWrapContainer = document.getElementById('flexContainerFlexWrapExample');
+
+// Cambia flex-wrap cuando el usuario selecciona una opción
+if (selectFlexWrap && flexWrapContainer) {
+  selectFlexWrap.addEventListener('change', (event) => {
+    flexWrapContainer.style.flexWrap = event.target.value;
+  });
+}
+
+/* Fin wrap */
+
+
+/* Inicio FlexFlow */
+
+// Selección del select para flex-flow
+const selectFlexFlow = document.getElementById('flexFlowExample');
+// Contenedor específico para aplicar flex-flow
+const flexFlowContainer = document.getElementById('flexContainerFlexFlowExample');
+
+// Cambia flex-flow cuando el usuario selecciona una opción
+if (selectFlexFlow && flexFlowContainer) {
+  selectFlexFlow.addEventListener('change', (event) => {
+    flexFlowContainer.style.flexFlow = event.target.value;
+  });
+}
+
+/* Inicio FlexFlow */
