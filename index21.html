@@ -9,22 +9,103 @@
 <body>
 
     <div class="final-nav">
-        <a href="index19.html">PAG 19</a>
+        <a href="index20.html">PAG 20</a>
         <a href="index.html">INICIO</a>
-        <a href="index19.html">PAG 19</a> 
+        <a href="index22.html">PAG 22</a> 
     </div>  
     
 
-    <h1>PROPIEDADES DE </h1>
-    
+    <h3>Overflow</h3>
 
-    <div class="final-nav">
-        <a href="index19.html">PAG 19</a>
-        <a href="index.html">INICIO</a>
-        <a href="index19.html">PAG 19</a> 
-    </div>  
-    
+    <p>Se refiere al comportamiento por ejemplo al de una ventana como las de windows, cuando su contenido <br>
+     desborda el area visible de su contenedor, y tiene varios valores:</p>
 
-    <script src="./script2.js"></script>
+     <p>
+       <i style="color: green;">visible: </i>El contenido que desborda se muestra fuera del contenedor.<br><br>
+       <i style="color: green;">hidden:</i>El contenido que desborda se oculta.<br><br>
+       <i style="color: green;">scroll: </i>El contenido que desborda se muestra con una barra de desplazamiento.<br><br>
+       <i style="color: green;">auto:</i> Solo muestra barras de desplazamiento si el contenido realmente desborda. <br><br>
+     </p> <br><br>
+
+     <p>El siguiente es el codigo del ejemplo en HTML, CSS y JavaScript, para overflow</p>
+
+     <img src="./images/overflowHTML.png" alt=""><br><br>
+     <img src="./images/overflowCSS.png" alt=""><br><br>
+     <img src="./images/overflowJS.png" alt=""><br><br>
+    
+     <div>
+        <label for="overflowExample">Selecciona el tipo de overflow:</label>
+        <select id="overflowExample">
+          <option value="visible">Visible</option>
+          <option value="hidden">Hidden</option>
+          <option value="scroll">Scroll</option>
+          <option value="auto">Auto</option>
+        </select>
+      </div>
+  
+      <!-- Contenedor para el ejemplo de overflow -->
+      <div class="overflow-wrapper">
+        <div id="overflowContainerExample">
+          <p class="overflow-text">
+            Este es un ejemplo de contenido que desborda. Este texto es largo y continuará para mostrar el efecto del overflow en el contenedor.
+             Si el contenido excede las dimensiones del contenedor, se aplicará el tipo de overflow seleccionado para manejar el desbordamiento.
+              Cambia el tipo de overflow en el menú desplegable para ver los diferentes comportamientos.
+          </p>
+        </div>
+      </div>
+
+      <br><br>
+
+      <p>Overflow es un shortHand de las propiedades overflow-x y overflow-h</p>
+      <p>si vez texto sobre texto solo selecciona hiden</p>
+
+      <div>
+        <label for="overflowXExample">Selecciona overflow-x:</label>
+        <select id="overflowXExample">
+          <option value="visible">Visible</option>
+          <option value="hidden">Hidden</option>
+          <option value="scroll">Scroll</option>
+          <option value="auto">Auto</option>
+        </select>
+      </div>
+      
+      <div>
+        <label for="overflowYExample">Selecciona overflow-y:</label>
+        <select id="overflowYExample">
+          <option value="visible">Visible</option>
+          <option value="hidden">Hidden</option>
+          <option value="scroll">Scroll</option>
+          <option value="auto">Auto</option>
+        </select>
+      </div>
+  
+      <!-- Contenedor para el ejemplo de overflow-x y overflow-y -->
+      <div class="overflow-xy-wrapper">
+        <div id="overflowContainerXYExample">
+          <p class="overflow-xy-text">
+            Este es un ejemplo de contenido que se desborda tanto horizontal como verticalmente. El texto es largo y continuará para demostrar cómo `overflow-x` y `overflow-y` controlan el desbordamiento en cada dirección de forma independiente. Ajusta los valores en los menús desplegables para ver cómo afectan la visualización del contenido.
+          </p>
+        </div>
+      </div>
+
+      <p style="color: green;">IMPORTANTE: La inversión entre overflow-x y overflow-y ocurre cuando el navegador, al limitar el contenedor <br>
+        en ambos ejes (con width y height), interpreta ambiguamente el desbordamiento debido al flujo de contenido <br>
+        y al modelo de caja. Esto sucede especialmente si el contenedor no usa box-sizing: border-box, ya que el <br>
+        padding y border pueden aumentar el tamaño total y provocar que el desbordamiento se gestione en el eje incorrecto.</p>
+
+        <p>El siguiente es el codigo del ejemplo en HTML, CSS y JavaScript, para overflow en x and y</p>
+
+        <img src="./images/overflowxyHTML.png" alt=""><br><br>
+        <img src="./images/overflowxyCSS.png" alt=""><br><br>
+        <img src="./images/overflowxyJS.png" alt=""><br><br>
+
+        <div class="final-nav">
+          <a href="index20.html">PAG 20</a>
+          <a href="index.html">INICIO</a>
+          <a href="index22.html">PAG 22</a> 
+      </div>  
+      
+
+    <script src="./script6.js"></script>
 </body>
 </html>

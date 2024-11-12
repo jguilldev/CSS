@@ -732,3 +732,57 @@ strong{
   justify-content: flex-start;
 }
 /* Fin flex-flow */
+
+/* Inicio overflow */
+.overflow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#overflowContainerExample {
+  width: 300px; /* Ancho fijo para forzar el desbordamiento */
+  height: 150px; /* Altura fija para forzar el desbordamiento */
+  border: 2px solid #333;
+  padding: 10px;
+  background-color: #f9f9f9;
+  overflow: visible; /* Valor inicial de overflow */
+}
+
+.overflow-text {
+  font-size: 14px;
+  color: red;
+  line-height: 1.5;
+}
+/* fin overflow */
+
+
+/* Inicio overflow x and y */
+/* Estilos específicos para el ejemplo de overflow-x y overflow-y */
+.overflow-xy-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#overflowContainerXYExample {
+  width: 250px; /* Ancho fijo para forzar el desbordamiento horizontal */
+  height: 100px; /* Altura fija para forzar el desbordamiento vertical */
+  border: 2px solid #333;
+  padding: 10px;
+  background-color: #f9f9f9;
+  overflow-x: visible; /* Asegura el comportamiento inicial en x */
+  overflow-y: visible; /* Asegura el comportamiento inicial en y */
+  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño del contenedor */
+}
+
+.overflow-xy-text {
+  font-size: 14px;
+  color: red;
+  line-height: 1.5;
+}
+/* fin overflow x and y */
