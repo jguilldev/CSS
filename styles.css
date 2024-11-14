@@ -786,3 +786,176 @@ strong{
   line-height: 1.5;
 }
 /* fin overflow x and y */
+
+/* Inicio de float */
+.float-wrapper {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+/* Caja flotante a la izquierda */
+.float-left-box {
+  width: 45%;
+  float: left;
+  margin: 10px;
+  padding: 10px;
+  background-color: #e74c3c;
+  color: white;
+  font-weight: bold;
+}
+
+/* Caja flotante a la derecha */
+.float-right-box {
+  width: 45%;
+  float: right;
+  margin: 10px;
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+}
+
+/* Texto que rodea las cajas flotantes */
+.float-text {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Clase para limpiar los flotantes */
+.clear-both {
+  clear: both;
+}
+/* Fin de float */
+
+/* >Inicio de before */
+.before-wrapper {
+  border: 1px solid green;
+  padding: 20px;
+  background-color: rgb(109, 47, 255);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* Estilo del título con ::before */
+.before-title::before {
+  content: "★ "; /* Contenido insertado antes del título */
+  color: red; /* Color del icono antes del título */
+  font-size: 24px; /* Tamaño del icono */
+  margin-right: 5px; /* Espacio entre el icono y el título */
+}
+
+/* Estilo del párrafo con ::before */
+.before-text::before {
+  content: "• "; /* Punto decorativo antes del párrafo */
+  color: black ; /* Color del punto decorativo */
+  font-size: 18px; /* Tamaño del punto */
+  margin-right: 5px; /* Espacio entre el punto y el texto */
+}
+/* Fin de before */
+
+/* Inicio de after */
+/* Estilos específicos para el ejemplo de ::after */
+.after-wrapper {
+  border: 1px solid purple;
+  padding: 20px;
+  background-color: hsl(0, 87%, 34%);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* Estilo del título con ::after */
+.after-title::after {
+  content: " ★"; /* Contenido insertado después del título */
+  color: orange; /* Color del icono después del título */
+  font-size: 24px; /* Tamaño del icono */
+  margin-left: 5px; /* Espacio entre el título y el icono */
+}
+
+/* Estilo del párrafo con ::after */
+.after-text::after {
+  content: " ✔"; /* Icono decorativo después del párrafo */
+  color: #2ecc71; /* Color del icono */
+  font-size: 18px; /* Tamaño del icono */
+  margin-left: 5px; /* Espacio entre el texto y el icono */
+}
+/* Fin de after */
+
+
+/* Inicio de first line */
+.first-line-wrapper {
+  border: 1px solid #008000; /* Borde verde oscuro */
+  padding: 20px;
+  background-color: #6D2FFF; /* Fondo púrpura oscuro */
+  max-width: 600px;
+  margin: 20px auto;
+  color: white; /* Color del texto general */
+}
+
+.first-line-text::first-line {
+  color: #FFD700; /* Color dorado para la primera línea */
+  font-size: 1.2em; /* Tamaño ligeramente mayor */
+  font-weight: bold; /* Negrita para destacar */
+  text-transform: uppercase; /* Mayúsculas para hacerla resaltar */
+}
+/* Fin de first line */
+
+
+/* Inicio de first letter */
+.first-letter-wrapper {
+  border: 1px solid #008000; /* Borde verde oscuro */
+  padding: 20px;
+  background-color: #6D2FFF; /* Fondo púrpura oscuro */
+  max-width: 600px;
+  margin: 20px auto;
+  color: white; /* Color del texto general */
+}
+
+.first-letter-text::first-letter {
+  color: #FFD700; /* Color dorado para la primera letra */
+  font-size: 3em; /* Tamaño grande para destacar la primera letra */
+  font-weight: bold; /* Negrita para hacerla más visible */
+  float: left; /* Flotación a la izquierda para un estilo de inicial */
+  margin-right: 5px; /* Espacio entre la primera letra y el resto del texto */
+  line-height: 1; /* Ajuste de altura para alineación */
+}
+/* Fin de first letter */
+
+/* Inicio de place holder */
+.placeholder-wrapper-simple {
+  border: 1px solid #008000; /* Borde verde oscuro */
+  padding: 20px;
+  background-color: #6D2FFF; /* Fondo púrpura oscuro */
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.placeholder-label-simple {
+  color: white; /* Color del texto de la etiqueta */
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.placeholder-input-simple {
+  width: 100%; /* Ancho completo */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #008000; /* Borde verde oscuro */
+  border-radius: 5px;
+  background-color: #FFFFFF; /* Fondo blanco para el campo de entrada */
+}
+
+/* Estilos para el placeholder */
+.placeholder-input-simple::placeholder {
+  color: #FFD700; /* Color dorado para el texto del placeholder */
+  font-style: italic; /* Estilo en cursiva */
+  font-weight: bold; /* Negrita */
+  opacity: 0.8; /* Opacidad del placeholder */
+}
+
+/* Fin de place holder */
+

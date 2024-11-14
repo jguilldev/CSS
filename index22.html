@@ -14,6 +14,67 @@
         <a href="index23.html">PAG 23</a> 
     </div>  
 
+    <h3>Float</h3>
+
+    <p>Esta propiedad se usa para alinear los elementos ya sea a la izquierda o a la derecha, estos deben estar <br>
+     dentro de un contenedor, y permite que otros elementos se reacomoden al rededor de ellos, su principal funcion <br>
+    es crear layouts de columnas, o tambien se usa para alinear imagenes con texto dentro de esos mismos contenedores</p>
+
+    <p>
+        <i style="color: green;">left: </i>El elemento se desplaza hacia la izquierda y otros elementos fluyen a su derecha.<br><br>
+        <i style="color: green;">right: </i>El elemento se desplaza hacia la derecha y otros elementos fluyen a su izquierda.<br><br>
+        <i style="color: green;">none: </i>El elemento no flota y se comporta de acuerdo con el flujo normal de la página (valor predeterminado).<br><br>
+        <i style="color: green;">clear: </i>Es comun itilizar esta propiedad, para evitar problemas de superposicion <br>
+        con otros elementos, y esta toma los valores de left right o both para indicar la direccion donde no debe haber <br>
+        objetos flotantes<br><br>
+      </p> <br>
+
+      <div>
+        <label for="floatLeftExample">Selecciona el tipo de float para la caja izquierda:</label>
+        <select id="floatLeftExample">
+          <option value="left">Float Left</option>
+          <option value="right">Float Right</option>
+          <option value="none">None</option>
+        </select>
+      </div>
+  
+      <div>
+        <label for="floatRightExample">Selecciona el tipo de float para la caja derecha:</label>
+        <select id="floatRightExample">
+          <option value="right">Float Right</option>
+          <option value="left">Float Left</option>
+          <option value="none">None</option>
+        </select>
+      </div>
+  
+      <div>
+        <label for="clearExample">Selecciona el tipo de clear para el contenedor final:</label>
+        <select id="clearExample">
+          <option value="none">None</option>
+          <option value="left">Clear Left</option>
+          <option value="right">Clear Right</option>
+          <option value="both">Clear Both</option>
+        </select>
+      </div>
+  
+      <!-- Inicio contenedor para el ejemplo de float y clear -->
+      <div class="float-wrapper">
+        <div class="float-left-box">Caja Flotante Izquierda</div>
+        <div class="float-right-box">Caja Flotante Derecha</div>
+        <p class="float-text">
+          Este es un texto que rodea las cajas flotantes. Cuando se utiliza `float`, otros elementos fluyen alrededor de los elementos flotantes, en este caso la caja izquierda y la caja derecha. La propiedad `float` permite crear layouts flexibles y, junto con `clear`, ayuda a evitar que el contenido se superponga.
+        </p>
+        <div class="clear-both" id="clearContainer"></div> <!-- Elemento para limpiar flotantes -->
+      </div>
+
+      <p>El siguiente es el codigo del ejemplo en HTML, CSS y JavaScript, para float del ejemplo anterior</p>
+
+      <img src="./images/floatHTML.png" alt=""><br><br>
+      <img src="./images/floatCSS.png" alt=""><br><br>
+      <img src="./images/flotaJS.png" alt=""><br><br>
+  
+      <!-- Fin contenedor para el ejemplo de float y clear -->
+
 
     <div class="final-nav">
         <a href="index21.html">PAG 21</a>
